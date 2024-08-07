@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>About</title>
+  <style type="text/css">
+    body {
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+    .outer-container {
+      background-color: #000000;
+      border: 10px solid; /* Thin border */
+      border-image: repeating-linear-gradient(
+        45deg,
+        red, orange, yellow, green, blue, indigo, violet,
+        red, orange, yellow, green, blue, indigo, violet
+      ) 10;
+      padding: 20px;
+      box-sizing: border-box; /* Ensures padding is included in the width/height */
+      min-height: 100vh; /* Ensures the container covers the full viewport height */
+    }
+    h2 {
+      margin: 0 0 14.9px 0;
+      font: 18px Arial;
+      color: #ffffff;
+      -webkit-text-stroke: #ffffff;
+    }
+    p {
+      margin: 0 0 12px 0;
+      font: 12px Arial;
+      color: #ffffff;
+      -webkit-text-stroke: #ffffff;
+    }
+    .game-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    iframe {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-container">
+    <h2><b>About</b></h2>
+    <p id="message">Loading...</p>
+    <p>© our six months '24</p>
+    <div class="game-container">
+      <iframe src="https://connections.swellgarfo.com/game/-O3ejN4QFeunaufarcbs" width="800" height="600" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script>
+    function calculateMonths(startDate) {
+      const today = new Date();
+      const start = new Date(startDate);
+      let months = (today.getFullYear() - start.getFullYear()) * 12;
+      months -= start.getMonth();
+      months += today.getMonth();
+      return months <= 0 ? 0 : months;
+    }
+
+    const startDate = '2024-01-15';
+    const months = calculateMonths(startDate);
+
+    document.getElementById('message').innerText = 
+      `Ugh 'about' that's such a hard question. We're both awesome and totally swag-coded. I think that suffices for now, you know the rest!\n` +
+      `We started dating ${months} months ago!`;
+  </script>
+</body>
+</html>

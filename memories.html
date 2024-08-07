@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            border: 10px solid; /* Thin border */
+            border-image: repeating-linear-gradient(
+                45deg,
+                red, orange, yellow, green, blue, indigo, violet,
+                red, orange, yellow, green, blue, indigo, violet
+            ) 10;
+        }
+
+        section {
+            padding: 2em;
+            margin: 1em;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: black;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .media-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columns */
+            gap: 1em; /* Space between images */
+        }
+
+        .media-container img {
+            max-width: 100%; /* Ensure images fit within their grid cell */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            display: block; /* Ensure images are block elements for better alignment */
+        }
+    </style>
+</head>
+<body>
+    <section id="memories">
+        <h2>Memories</h2>
+        <p>Here is us!</p>
+        <div class="media-container">
+            <img src="IMG_6203.jpg" alt="Bluegrass">
+            <img src="IMG_0643_Original.jpg" alt="Gazebo">
+            <img src="IMG_2108_Original.jpg" alt="Sharpie">
+            <img src="IMG_3237.jpg" alt="Bonfire">
+            <img src="IMG_4824.jpg" alt="Zogs">
+            <img src="IMG_2100.jpg" alt="Costa Rica">
+            <img src="73787169838__C828E277-CE7A-4775-92FB-02BBD96083E5.jpg" alt="U">
+            <img src="IMG_5046.jpg" alt="Brevard">
+            <img src="IMG_4812.jpg" alt="Prom">
+            <img src="IMG_4306.jpg" alt="Bobs">
+            <img src="IMG_4849.jpg" alt="Bday">
+            <img src="IMG_8008.jpg" alt="Grad">
+            <img src="IMG_5140.jpg" alt="Ear">
+            <img src="IMG_5100.jpg" alt="Juice">
+            <img src="IMG_5188.jpg" alt="Contra">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; our six months '24</p>
+    </footer>
+</body>
+</html>

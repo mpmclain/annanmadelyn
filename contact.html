@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        html, body {
+            height: 100%; /* Ensure full height */
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer-container {
+            background-color: black;
+            border: 10px solid; /* Thin border */
+            border-image: repeating-linear-gradient(
+                45deg,
+                red, orange, yellow, green, blue, indigo, violet,
+                red, orange, yellow, green, blue, indigo, violet
+            ) 10;
+            box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+            min-height: 100vh; /* Ensure it covers full viewport height */
+            padding-bottom: 50px; /* Space for footer */
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            padding: 2em;
+            margin: 1em;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            text-align: center; /* Center content in section */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: black;
+            color: white;
+            position: relative;
+            width: 100%;
+        }
+
+        .giphy-embed {
+            display: block;
+            margin: 0 auto; /* Center the iframe */
+        }
+
+        .giphy-link {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Thankfully you have my number ;)</p>
+            <p>...and soon a squirrel!</p>
+            <iframe src="https://giphy.com/embed/Q0j9qYtgQUFQ4iatVk" width="480" height="446" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <p><a href="https://giphy.com/gifs/love-letter-letters-Q0j9qYtgQUFQ4iatVk" class="giphy-link"></p>
+        </section>
+        <footer>
+            <p>&copy; our six months '24</p>
+        </footer>
+    </div>
+</body>
+</html>
