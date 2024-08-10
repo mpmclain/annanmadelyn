@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>annanmadelyn</title>
+    <!-- Link to Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%; /* Ensure full height */
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer-container {
+            background-color: black;
+            border: 10px solid; /* Thin border */
+            border-image: repeating-linear-gradient(
+                45deg,
+                red, orange, yellow, green, blue, indigo, violet,
+                red, orange, yellow, green, blue, indigo, violet
+            ) 10;
+            box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+            min-height: 100vh; /* Ensure it covers full viewport height */
+            padding-bottom: 50px; /* Space for footer */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1; /* Allow content to grow and take up available space */
+            font-family: Arial, sans-serif; /* Set font to Arial */
+            color: white;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-family: 'Courier', monospace; /* Apply Courier font to the heading */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background-color: black;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .gif-container {
+            text-align: center;
+            margin: 2em 0; /* Adjust margin as needed */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: black;
+            color: white;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <header>
+            <h1>Hey Anna!</h1>
+        </header>
+        <div class="content">
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="memories.html">Memories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="gif-container">
+                <iframe src="https://giphy.com/embed/DSGBELtUGenOjtW6LH" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <p><a href="https://giphy.com/gifs/video-games-mario-bros-DSGBELtUGenOjtW6LH" style="color: white"/a></p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; our six months '24</p>
+        </footer>
+    </div>
+</body>
+</html>
